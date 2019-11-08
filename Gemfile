@@ -5,7 +5,7 @@ if ENV.key?('PUPPET')
 else
   puppetversion = ['>= 2.7']
 end
-gem 'puppet', puppetversion
+gem 'puppet', '>= 4.10.1', puppetversion
 
 if ENV.key?('RUBY_AUGEAS')
   if ENV['RUBY_AUGEAS'] == '0.3.0'
@@ -21,7 +21,7 @@ gem 'ruby-augeas', rbaugversion
 
 group :development do
   gem 'puppet-lint'
-  gem 'puppet-syntax'
+  gem 'puppet-syntax', '>= 1.1.0'
   gem 'puppetlabs_spec_helper', '>= 0.4.1'
   gem 'rake'
   gem 'rspec-puppet', :git => 'https://github.com/rodjek/rspec-puppet.git', :ref => '544b168'
