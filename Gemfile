@@ -21,9 +21,9 @@ gem 'ruby-augeas', rbaugversion
 
 group :development do
   gem 'puppet-lint'
-  gem 'puppet-syntax'
+  gem 'puppet-syntax', '>= 1.1.0'
   gem 'puppetlabs_spec_helper', '>= 0.4.1'
-  gem 'rake'
+  gem 'rake', '>= 12.3.3'
   gem 'rspec-puppet', :git => 'https://github.com/rodjek/rspec-puppet.git', :ref => '544b168'
   gem 'simplecov'
   gem 'yard'
